@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Apartamento {
     
-    private int id_ad, nrporta, qtdQuartos;
+    private int id, nrPorta, qtdQuartos;
     private String tipo;
     private Proprietario proprietario;
 

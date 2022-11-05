@@ -1,7 +1,6 @@
 package com.apartamento.demo.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.convert.ReadingConverter;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -14,8 +13,9 @@ public class RepositoryProprietario {
     JdbcTemplate db;
     
     public void gravar(Proprietario proprietario){
-        db.update("insert into proprietario(nome, telefone) values(?,?)",
-        proprietario.getNome(), proprietario.getTelefone());
+        db.update("insert into proprietario(nome, telefone) values(?, ?)",
+        proprietario.getNome(), 
+        proprietario.getTelefone());
     }
 
 }

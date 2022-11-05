@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>cadastro Apto</h1>
+    <form alt="cadastroApto" action="/cadastrarApto" method="post" th:object="${apartamento}">
+        <label for="nro_quarto">Número do quarto: </label>
+        <input type="number" id="nro_quarto" th:field="*{nrPorta}">
+
+        <label for="qtd_quartos">Quantidades de quartos: </label>
+        <input type="number" id="qtd_quartos" th:field="*{qtdQuartos}">
+        
+        <label for="tipo_ocup">Tipo de Ocupação: </label>
+        <input type="text" id="tipo_ocup" th:field="*{tipo}">
+
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Cadastrar">
+    </form>
 </body>
 </html>

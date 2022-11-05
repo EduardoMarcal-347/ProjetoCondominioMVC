@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class Proprietario {
     
-    private String nome, Telefone;
-    private int id_prop;
+    private String nome, telefone;
+    private int idProp;
 
 }
