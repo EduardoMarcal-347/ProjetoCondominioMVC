@@ -13,4 +13,9 @@ public class Apartamento {
     private String tipo;
     private Proprietario proprietario;
 
+
+    public void gravar(Apartamento apartamento){
+        
+    }
+
 }
